@@ -1,12 +1,11 @@
 import Layout from "./components/Layout";
+import CustomThemeProvider from "./components/CustomThemeProvider";
 
 function App() {
   return (
-    <>
-      <Layout>
-        Home Page
-        </Layout>;
-    </>
+    <CustomThemeProvider>
+      <Layout>Home Page</Layout>;
+    </CustomThemeProvider>
   );
 }
 
