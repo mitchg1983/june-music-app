@@ -1,15 +1,18 @@
-import React from "react";
+import React from 'react';
+import Header from './Header';
 
 const Layout = (props) => {
   const { children } = props;
 
-  console.log("Children...", children);
   return (
     <div>
-      <header style={{}}></header>
-      <div>{children}</div>
+      <Header />
+      <div>
+        {children}
+      </div>
     </div>
-  );
+  )
+
 };
 
 export default Layout;
